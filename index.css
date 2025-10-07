@@ -53,7 +53,7 @@ body { max-width: 72rem; }
 }
 
 nav.toc {
-    position: sticky; top: 1rem; max-height: calc(100vh - 2rem); overflow: auto; padding: 0.75rem 0.75rem; border: var(--toc-border); border-radius: 0.5rem; background: rgba(200,200,200,0.15);
+    position: sticky; top: 1rem; max-height: calc(100vh - 2rem); overflow: auto; padding: 0.75rem 0.75rem; border: var(--toc-border); border-radius: 0.5rem; background: #f7f7f7;
 }
 
 .toc h2 { margin: 0 0 0.5rem 0; font-size: 1rem; color: #444; letter-spacing: .02em; }
