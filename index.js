@@ -63,28 +63,4 @@
     }, { rootMargin: '-20% 0px -70% 0px', threshold: [0, 0.25, 0.5, 1] });
 
     headings.forEach(h => io.observe(h));
-
-    const toggleBtn = document.querySelector('.toc-toggle');
-    const toc = document.getElementById('toc');
-    const collapseKey = 'toc-collapsed';
-
-    const setCollapsed = (collapsed) => {
-        if (collapsed) {
-            toc.setAttribute('hidden', '');
-            toggleBtn.setAttribute('aria-expanded', 'false');
-        } else {
-            toc.removeAttribute('hidden');
-            toggleBtn.setAttribute('aria-expanded', 'true');
-        }
-        try { localStorage.setItem(collapseKey, collapsed ? '1' : '0'); } catch {}
-    };
-
-    const prefersCollapsed = window.matchMedia('(max-width: 1023px)').matches;
-    const saved = (typeof localStorage !== 'undefined') ? localStorage.getItem(collapseKey) : null;
-    setCollapsed(saved != null ? saved === '1' : prefersCollapsed);
-
-    toggleBtn.addEventListener('click', () => {
-        const isHidden = toc.hasAttribute('hidden');
-        setCollapsed(!isHidden);
-    });
 })();

@@ -7,7 +7,7 @@ body { margin: 0 auto; padding: 1.5em; }
     html { font-size: 125%; }
 }
 
-h1, h2, h3, h4 { margin: 2.5rem 0 1.5rem 0; line-height: 1.25; color: #333; scroll-margin-top: 80px; }
+h1, h2, h3, h4 { margin: 1.5rem 0 1.5rem 0; line-height: 1.25; color: #333; scroll-margin-top: 80px; }
 a { color: #cd539e; text-decoration: none; }
 a:hover, a:focus, a:active { text-decoration: underline; }
 p { margin: 1em 0; line-height: 1.5; }
@@ -37,23 +37,17 @@ figure figcaption { font-family: monospace, monospace; font-size: 0.75em; text-a
 .footnote-definition .footnote-body { margin: 1em 0; padding: 0 1em; border: 1px dashed rgba(250, 100, 50, 0.3); background-color: rgba(200,200,200,0.2); }
 .footnote-definition .footnote-body p:only-child { margin: 0.2em 0; }
 
-:root {
-    --toc-width: 260px;
-    --toc-gap: 1.25rem;
-    --toc-border: 1px dashed rgba(250, 100, 50, 0.4);
-}
-
 body { max-width: 72rem; }
 
-.layout { display: grid; grid-template-columns: 1fr; gap: var(--toc-gap); align-items: start; }
+.layout { display: grid; grid-template-columns: 1fr; align-items: start; }
 
 @media (min-width: 1024px) {
-    .layout { grid-template-columns: var(--toc-width) minmax(0, 1fr); }
+    .layout { grid-template-columns: minmax(0, 1fr); }
     body { padding-left: 2rem; padding-right: 2rem; }
 }
 
 nav.toc {
-    position: sticky; top: 1rem; max-height: calc(100vh - 2rem); overflow: auto; padding: 0.75rem 0.75rem; border: var(--toc-border); border-radius: 0.5rem; background: #f7f7f7;
+    top: 1rem; max-height: calc(100vh - 2rem); overflow: auto; padding: 0.75rem 0.75rem; border-radius: 0.5rem; background: #f7f7f7;
 }
 
 .toc h2 { margin: 0 0 0.5rem 0; font-size: 1rem; color: #444; letter-spacing: .02em; }
@@ -71,12 +65,10 @@ nav.toc {
 
 .toc-link[aria-current="true"] { background: rgba(250, 200, 50, 0.15); outline: 1px dashed rgba(050, 100, 50, 0.5); }
 
-.toc-toggle { display: inline-flex; align-items: center; gap: .5rem; padding: .5rem .75rem; border: var(--toc-border); border-radius: .5rem; background: rgba(200,200,200,0.15); cursor: pointer; }
+.toc-toggle { display: inline-flex; align-items: center; gap: .5rem; padding: .5rem .75rem; border-radius: .5rem; background: rgba(200,200,200,0.15); cursor: pointer; }
 .toc-toggle span { font-size: .9rem; }
 
 @media (min-width: 1024px) { .toc-toggle { display: none; } }
-
-.toc-collapsible[hidden] { display: none; }
 
 main { min-width: 0; }
 
