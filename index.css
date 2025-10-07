@@ -1,7 +1,7 @@
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
 html { overflow-y: scroll; height: 100%; font: 100%/1.5 sans-serif; word-wrap: break-word; }
-body { margin: 0 auto; padding: 1.5em; }
+body { margin: 0 auto; padding: 5%; }
 
 @media (min-width: 768px) {
     html { font-size: 125%; }
@@ -39,13 +39,6 @@ figure figcaption { font-family: monospace, monospace; font-size: 0.75em; text-a
 
 body { max-width: 72rem; }
 
-.layout { display: grid; grid-template-columns: 1fr; align-items: start; }
-
-@media (min-width: 1024px) {
-    .layout { grid-template-columns: minmax(0, 1fr); }
-    body { padding-left: 2rem; padding-right: 2rem; }
-}
-
 nav.toc {
     top: 1rem; max-height: calc(100vh - 2rem); overflow: auto; padding: 0.75rem 0.75rem; border-radius: 0.5rem; background: #f7f7f7;
 }
@@ -63,12 +56,10 @@ nav.toc {
 .depth-3 { padding-left: 2.25rem; font-weight: 500; font-size: 0.9em; }
 .depth-4 { padding-left: 3.25rem; font-weight: 500; font-size: 0.9em; }
 
-.toc-link[aria-current="true"] { background: rgba(250, 200, 50, 0.15); outline: 1px dashed rgba(050, 100, 50, 0.5); }
+.toc-link[aria-current="true"] { background: #cd539e57; }
 
 .toc-toggle { display: inline-flex; align-items: center; gap: .5rem; padding: .5rem .75rem; border-radius: .5rem; background: rgba(200,200,200,0.15); cursor: pointer; }
 .toc-toggle span { font-size: .9rem; }
-
-@media (min-width: 1024px) { .toc-toggle { display: none; } }
 
 main { min-width: 0; }
 
