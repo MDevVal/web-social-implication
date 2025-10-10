@@ -1,9 +1,9 @@
-/* Base / brand */
+
 :root { --accent: #cd539e; }
 body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; color: #111827; background: #fff; }
 strong { font-weight: 700; }
 
-/* Header + nav */
+
 .site-header {
   display: flex; align-items: center; justify-content: space-between;
   padding: 20px 24px; margin-bottom: 8px;
@@ -16,7 +16,7 @@ strong { font-weight: 700; }
 }
 .site-nav a[aria-current="page"] { font-weight: 700; text-decoration: underline; }
 
-/* Hero (top-only background) */
+
 .hero { margin: 0 0 16px; }
 .hero--with-bg {
   position: relative; color: #fff;
@@ -30,11 +30,11 @@ strong { font-weight: 700; }
 .hero-date { font-size: clamp(18px, 3.2vw, 28px); margin: .35rem 0 0; color: #e5e7eb; }
 .hero-byline { font-size: 14px; margin: .5rem 0 0; color: #e5e7eb; letter-spacing: .02em; text-transform: uppercase; }
 
-/* Sections */
+
 #content { padding: 0 24px 48px; }
 .section-title { font-size: clamp(22px, 3.2vw, 28px); margin: 24px 0 12px; }
 
-/* Two-column Summary layout */
+
 .summary-grid {
   display: grid; grid-template-columns: 1.3fr .9fr; gap: 20px; align-items: start; margin-bottom: 16px;
 }
@@ -49,11 +49,11 @@ strong { font-weight: 700; }
   width: 100%;
   height: auto; }
 
-/* Lists */
+
 .authors { line-height: 1.7; }
 .refs { line-height: 1.7; }
 
-/* Utilities / responsiveness */
+
 @media (max-width: 800px) {
   .summary-grid { grid-template-columns: 1fr; }
 }
