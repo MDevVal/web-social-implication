@@ -1,29 +1,28 @@
-
 :root { --accent: #cd539e; }
 body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; color: #111827; background: #fff; }
 strong { font-weight: 700; }
 
 
 .site-header {
-  display: flex; align-items: center; justify-content: space-between;
-  padding: 20px 24px; margin-bottom: 8px;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 20px 24px; margin-bottom: 8px;
 }
 .site-nav {
-  display: flex; gap: 1.25rem; padding: 0 24px 12px; flex-wrap: wrap;
+    display: flex; gap: 1.25rem; padding: 0 24px 12px; flex-wrap: wrap;
 }
 .site-nav a {
-  color: var(--accent); font-size: 20px; text-decoration: none;
+    color: var(--accent); font-size: 20px; text-decoration: none;
 }
 .site-nav a[aria-current="page"] { font-weight: 700; text-decoration: underline; }
 
 
 .hero { margin: 0 0 16px; }
 .hero--with-bg {
-  position: relative; color: #fff;
-  background-image:
+    position: relative; color: #fff;
+    background-image:
     linear-gradient(to bottom, rgba(15,23,42,.55), rgba(15,23,42,.55)),
     url("./images:/hero.jpg"); /* <-- replace with your hero image path */
-  background-size: cover; background-position: center;
+    background-size: cover; background-position: center;
 }
 .hero--with-bg .hero-content { position: relative; z-index: 1; padding: 64px 24px 72px; }
 .hero-title { font-size: clamp(44px, 9vw, 84px); margin: 0; line-height: 1.05; letter-spacing: .5px; }
@@ -36,18 +35,18 @@ strong { font-weight: 700; }
 
 
 .summary-grid {
-  display: grid; grid-template-columns: 1.3fr .9fr; gap: 20px; align-items: start; margin-bottom: 16px;
+    display: grid; grid-template-columns: 1.3fr .9fr; gap: 20px; align-items: start; margin-bottom: 16px;
 }
 .summary-card, .summary-media {
-  background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; overflow: hidden;
+    background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; overflow: hidden;
 }
 .summary-card { padding: 16px 20px; }
 .summary-card p { margin: 0 0 1rem; line-height: 1.65; }
 .summary-media { border: 1px solid #e5e7eb; border-radius: 12px; overflow: hidden; } /* keep your card look */
 .summary-media img {
-  display: block;
-  width: 100%;
-  height: auto; }
+    display: block;
+    width: 100%;
+height: auto; }
 
 
 .authors { line-height: 1.7; }
@@ -55,5 +54,5 @@ strong { font-weight: 700; }
 
 
 @media (max-width: 800px) {
-  .summary-grid { grid-template-columns: 1fr; }
+    .summary-grid { grid-template-columns: 1fr; }
 }
